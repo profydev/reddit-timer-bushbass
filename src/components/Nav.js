@@ -4,6 +4,17 @@ import styled from 'styled-components';
 
 const NavList = styled.ul`
   list-style: none;
+  .active {
+    color: rgb(255, 0, 128);
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  li a:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.2s;
+  }
 `;
 
 function Nav() {

@@ -1,13 +1,1 @@
-/* font-family: 'Bitter', serif;
-font-family: 'Montserrat', sans-serif; */
 
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-.active {
-  color: rgb(255, 0, 128);
-  font-weight: bold;
-}
-a {
-  text-decoration: none;
-}
