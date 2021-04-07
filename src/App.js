@@ -8,6 +8,8 @@ import Home from './pages/Home';
 import Header from './components/Header';
 import GlobalStyle from './GlobalStyle';
 import theme from './theme';
+import HowItWorks from './pages/HowItWorks';
+import About from './pages/About';
 
 function App() {
   return (
@@ -22,6 +24,12 @@ function App() {
         <Switch>
           <Route path="/search">
             <Search />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/howitworks">
+            <HowItWorks />
           </Route>
           <Route path="/">
             <Home />

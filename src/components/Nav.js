@@ -2,7 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-const NavList = styled.ul`
+const NavList = styled.div`
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
   .active {
     color: rgb(255, 0, 128);
@@ -10,8 +12,9 @@ const NavList = styled.ul`
   a {
     display: inline-block;
     text-decoration: none;
+    margin-left: 25px;
   }
-  li a:hover {
+  a:hover {
     transform: scale(1.1, 1.1);
     transition: 0.2s;
   }
@@ -21,16 +24,15 @@ function Nav() {
   return (
     <nav>
       <NavList>
-        <li>
-          <NavLink activeClassName="active" exact to="/">
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink activeClassName="active" to="/search">
-            Search
-          </NavLink>
-        </li>
+        <NavLink activeClassName="active" to="/search">
+          Search
+        </NavLink>
+        <NavLink activeClassName="active" to="/howitworks">
+          How it works
+        </NavLink>
+        <NavLink activeClassName="active" to="/about">
+          About
+        </NavLink>
       </NavList>
     </nav>
   );
